@@ -47,7 +47,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.github.Artem_Pb.todoapp.Main</mainClass>
+                            <mainClass>com.github.Artem_Pb.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
