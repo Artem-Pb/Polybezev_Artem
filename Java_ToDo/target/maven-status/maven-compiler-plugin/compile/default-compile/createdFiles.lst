@@ -1,0 +1,12 @@
+com/github/Artem_Pb/todoapp/CompositeTask.class
+com/github/Artem_Pb/todoapp/Status.class
+com/github/Artem_Pb/todoapp/Main$1.class
+com/github/Artem_Pb/todoapp/Command.class
+com/github/Artem_Pb/todoapp/Main.class
+com/github/Artem_Pb/todoapp/MegaTask.class
+com/github/Artem_Pb/todoapp/InputHandler.class
+com/github/Artem_Pb/todoapp/TaskIdGenerator.class
+com/github/Artem_Pb/todoapp/FileManager.class
+com/github/Artem_Pb/todoapp/Task.class
+com/github/Artem_Pb/todoapp/ToDoList.class
+com/github/Artem_Pb/todoapp/SimpleTask.class
