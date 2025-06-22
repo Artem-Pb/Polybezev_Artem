@@ -1,4 +1,4 @@
-#include "list.h"
+#include "../include/list.h"
 
 #include <stdio.h>
 
@@ -41,7 +41,7 @@ bool add_to_list(List* list, const Task* new_task) {
     return true;
 }
 
-bool is_empty_list(List* list) { return list == NULL || list->count == 0; }
+bool is_empty_list(const List* list) { return list == NULL || list->count == 0; }
 
 bool search_uniq_task(List* list, const Task* task) {
     if (is_empty_list(list)) return true;

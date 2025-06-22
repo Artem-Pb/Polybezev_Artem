@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "list.h"
-#include "serialization.h"
-#include "task.h"
-#include "tech_funct.h"
+#include "../include/list.h"
+#include "../include/serialization.h"
+#include "../include/task.h"
+#include "../include/tech_funct.h"
 
-#define DATA_FILE "todolist_data.dat"
+#define DATA_FILE "data/todolist_data.dat"
 
 void display_menu() {
     clear();
@@ -210,7 +210,6 @@ int main() {
         }
     }
 
-    // Главный цикл
     int choice = 0;
     while (choice != 7) {
         display_menu();

@@ -14,7 +14,7 @@ typedef struct {
 } List;
 
 List* init_list(size_t initial_capcity);
-bool is_empty_list(List* list);
+bool is_empty_list(const List* list);
 bool search_uniq_task(List* list, const Task* task);
 bool add_to_list(List* list, const Task* new_task);
 bool increase_capcity(List* list);

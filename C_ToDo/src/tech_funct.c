@@ -1,4 +1,4 @@
-#include "tech_funct.h"
+#include "../include/tech_funct.h"
 
 void clear() { printf("\033[H\033[J"); }
 
