@@ -2,18 +2,28 @@
 
 ## Портфолио проектов
 
-    Репозиторий содержит коллекцию практических проектов, выполненных в процессе изучения программирования. Каждый проект организован в отдельную ветку и сопровождается подробным техническим описанием.
+    Данный репозиторий представляет собой коллекцию практических проектов, выполненных в процессе интенсивного освоения программирования. Каждый проект размещён в отдельной ветке и снабжён подробным техническим описанием, раскрывающим архитектуру, используемые технологии и принятые проектные решения.
+
+    В репозитории отражён мой путь от первых шагов в C до уверенной разработки CLI-инструментов, командной работы и создания архитектурно выверенных приложений. Проекты охватывают работу с системным вводом-выводом, парсингом, регулярными выражениями, сериализацией, архитектурными паттернами, командным взаимодействием и оптимизацией кода.
 
 ### Структура репозитория
 
-## Main: 
-
-    Основное хранилище документации и общих рекомендаций.
-
 ## TodoList: 
 
-    Реализация приложения для ведения списков задач на Java и C. Возможность удобного добавления, редактирования и удаления задач, назначение категорий и приоритетов.
+    Консольное приложение для управления задачами с приоритетами, статусами и категориями.
+    Реализовано в двух версиях:
+        • Java-версия — объектно-ориентированная архитектура с паттернами (Singleton, Composite), сериализацией и структурой из 12+ классов.
+        • C-версия — ручное управление памятью, структура задач с методами, обработка ввода-вывода, модульный подход.
 
+    Архитектура спроектирована с нуля, оптимизирована под поддержку CLI.
+
+    В Java-версии — Maven-сборка, реализация сериализации, IO, гибкая структура задач.
+
+    В C — разработка всей структуры и логики: хранение задач, парсинг ввода, команды.
+
+    Вёл команду из 3 человек, организовывал рабочий процесс и принимал технические решения.
+
+    Оптимизировал проект: сократил избыточную вложенность, упростил интерфейс и повысил читаемость кода.
 ## GNU_Utils:
 
     Независимая реализация утилит cat и grep на языке Си. Эффективная обработка файлов, поиск и фильтрация данных.
@@ -45,13 +55,11 @@
 
 ## Project Portfolio
 
-    Repository holds a collection of practical projects accomplished during my programming education. Each project is arranged in a separate branch and supplemented with technical descriptions.
+    This repository is a collection of practical projects developed during my intensive programming training. Each project is organized in a separate branch and includes a detailed technical overview that covers architecture, technologies used, and key design decisions.
+
+    The repository reflects my learning path — from writing my first lines of C code to confidently developing CLI tools, collaborating in teams, and building well-structured, maintainable applications. Projects demonstrate experience with system I/O, parsing, regular expressions, serialization, architectural patterns, teamwork, and code optimization.
 
 ### Repository Structure
-
-## Main: 
-
-    General documentation and guideline storage.
     
 ## TodoList:
 
