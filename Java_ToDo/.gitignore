@@ -1,0 +1,18 @@
+# Build output
+target/
+*.class
+*.jar
+*.war
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# Runtime data
+todo_list.dat
+*.dat
+
+# Internal AI planning — not for repo
+ai/
+**/.DS_Store

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}"
+      lang="en">
+<head>
+    <title>New Mega Task</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h2 class="mb-4">New Mega Task</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <form th:action="@{/tasks/mega}" method="post">
+
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="title" name="title"
+                           placeholder="Mega task title" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Subtasks</label>
+                    <div id="subtasks">
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control" name="subTaskTitles"
+                                   placeholder="Subtask title" required>
+                            <button type="button" class="btn btn-outline-danger" onclick="removeSubtask(this)">✕</button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-secondary btn-sm" onclick="addSubtask()">
+                        + Add subtask
+                    </button>
+                </div>
+
+                <div class="d-flex gap-2 mt-4">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <a th:href="@{/tasks}" class="btn btn-outline-secondary">Cancel</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<th:block layout:fragment="scripts">
+<script>
+    function addSubtask() {
+        const container = document.getElementById('subtasks');
+        const div = document.createElement('div');
+        div.className = 'input-group mb-2';
+        div.innerHTML = `
+            <input type="text" class="form-control" name="subTaskTitles" placeholder="Subtask title" required>
+            <button type="button" class="btn btn-outline-danger" onclick="removeSubtask(this)">✕</button>
+        `;
+        container.appendChild(div);
+    }
+
+    function removeSubtask(btn) {
+        const container = document.getElementById('subtasks');
+        if (container.children.length > 1) {
+            btn.closest('.input-group').remove();
+        }
+    }
+</script>
+</th:block>
+</body>
+</html>
